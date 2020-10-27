@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Magic_8_Ball" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="2YK-en-TMX">
+                                <rect key="frame" x="44" y="0.0" width="808" height="393"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="auT-Ta-e8h" userLabel="Top View">
+                                        <rect key="frame" x="0.0" y="0.0" width="808" height="130.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask Me Anything..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oA7-L9-TzB">
+                                                <rect key="frame" x="245.5" y="41" width="317" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="oA7-L9-TzB" firstAttribute="centerY" secondItem="auT-Ta-e8h" secondAttribute="centerY" id="OTw-a2-b1d"/>
+                                            <constraint firstItem="oA7-L9-TzB" firstAttribute="centerX" secondItem="auT-Ta-e8h" secondAttribute="centerX" id="v7U-C2-RnL"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OAg-Qi-QNA" userLabel="Middle View">
+                                        <rect key="frame" x="0.0" y="131.5" width="808" height="130"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball1" translatesAutoresizingMaskIntoConstraints="NO" id="Yr7-xC-K34">
+                                                <rect key="frame" x="0.0" y="0.0" width="808" height="130"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Yr7-xC-K34" secondAttribute="trailing" id="3Kd-H4-t6G"/>
+                                            <constraint firstAttribute="bottom" secondItem="Yr7-xC-K34" secondAttribute="bottom" id="6Cf-MP-uWH"/>
+                                            <constraint firstItem="Yr7-xC-K34" firstAttribute="centerY" secondItem="OAg-Qi-QNA" secondAttribute="centerY" id="ALb-tD-Fz0"/>
+                                            <constraint firstItem="Yr7-xC-K34" firstAttribute="centerX" secondItem="OAg-Qi-QNA" secondAttribute="centerX" id="EN3-j0-zXn"/>
+                                            <constraint firstItem="Yr7-xC-K34" firstAttribute="top" secondItem="OAg-Qi-QNA" secondAttribute="top" id="EQq-hC-hlO"/>
+                                            <constraint firstItem="Yr7-xC-K34" firstAttribute="leading" secondItem="OAg-Qi-QNA" secondAttribute="leading" id="L3J-AX-edN"/>
+                                            <constraint firstItem="Yr7-xC-K34" firstAttribute="centerY" secondItem="OAg-Qi-QNA" secondAttribute="centerY" id="ako-UE-BY8"/>
+                                            <constraint firstItem="Yr7-xC-K34" firstAttribute="centerX" secondItem="OAg-Qi-QNA" secondAttribute="centerX" id="fX0-pU-z0B"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ug9-ma-W0l" userLabel="Bottom View">
+                                        <rect key="frame" x="0.0" y="262.5" width="808" height="130.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sP8-d6-EJf">
+                                                <rect key="frame" x="354" y="35.5" width="100" height="60"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="QwV-Ul-MlT"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="riC-Rh-KgS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="Ask">
+                                                    <color key="titleColor" red="0.49411764705882355" green="0.82352941176470584" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="askButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iBD-3k-7X7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="sP8-d6-EJf" firstAttribute="centerY" secondItem="Ug9-ma-W0l" secondAttribute="centerY" id="BYb-5Z-LM3"/>
+                                            <constraint firstItem="sP8-d6-EJf" firstAttribute="centerX" secondItem="Ug9-ma-W0l" secondAttribute="centerX" id="Grq-3v-MdR"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.43529411759999997" green="0.80392156859999997" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2YK-en-TMX" secondAttribute="bottom" id="LZf-iM-U9L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2YK-en-TMX" secondAttribute="trailing" id="Yu4-QS-nct"/>
+                            <constraint firstItem="2YK-en-TMX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cJ9-jB-3Ca"/>
+                            <constraint firstItem="2YK-en-TMX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="n7q-gi-UNx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Yr7-xC-K34" id="lWW-M9-Qk6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-197.54464285714286" y="75.362318840579718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ball1" width="305" height="273.5"/>
+    </resources>
+</document>
